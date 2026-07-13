@@ -3,13 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SSAFY 목표 | 나의 이야기</title>
+  <meta name="description" content="SSAFY에서 시작해 취업까지 이어지는 이동원의 목표 타임라인">
+  <title>SSAFY 목표 | 이동원의 이야기</title>
   <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="goals.css">
+  <script src="goals.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar" aria-label="주요 메뉴">
-      <a class="navbar__brand" href="index.html">나의 이야기</a>
+      <a class="navbar__brand" href="index.html">이동원의 이야기</a>
       <input class="navbar__toggle" type="checkbox" id="nav-toggle" aria-label="메뉴 열기">
       <label class="navbar__hamburger" for="nav-toggle" aria-hidden="true"><span class="navbar__hamburger-lines"></span></label>
       <ul class="navbar__menu">
@@ -19,10 +22,97 @@
       </ul>
     </nav>
   </header>
-  <main class="page">
-    <p class="page__eyebrow">SSAFY 목표</p>
-    <h1 class="page__title">배움을<br>결과로 만들어요.</h1>
-    <p class="page__description">SSAFY에서 이루고 싶은 목표와 성장 계획을 담는 페이지입니다.</p>
+
+  <main class="goals-page">
+    <header class="goals-hero">
+      <div>
+        <p class="goals-hero__eyebrow">MY SSAFY JOURNEY</p>
+        <h1>오늘의 배움을<br><span>내일의 결과로.</span></h1>
+      </div>
+      <p class="goals-hero__guide"><span aria-hidden="true">↘</span> 다섯 개의 여정 중<br>궁금한 단계를 눌러보세요.</p>
+    </header>
+
+    <section class="journey" aria-labelledby="journey-title">
+      <h2 class="sr-only" id="journey-title">SSAFY 목표 여정</h2>
+      <div class="timeline" aria-label="다섯 단계 목표 타임라인">
+        <svg class="timeline__path" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="road-gradient" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#3182f6"/>
+              <stop offset="1" stop-color="#6d5dfc"/>
+            </linearGradient>
+          </defs>
+          <path class="timeline__path-base" pathLength="100" d="M 26 150 L 120 150 C 180 150 210 56 300 56 C 380 56 400 244 500 244 C 600 244 620 56 700 56 C 790 56 790 150 840 150 L 974 150"/>
+          <path class="timeline__progress" pathLength="100" d="M 26 150 L 120 150 C 180 150 210 56 300 56 C 380 56 400 244 500 244 C 600 244 620 56 700 56 C 790 56 790 150 840 150 L 974 150"/>
+        </svg>
+        <div class="timeline__mobile-track" aria-hidden="true"><span class="timeline__mobile-progress"></span></div>
+
+        <div class="endpoint endpoint--start" aria-hidden="true">
+          <span class="endpoint__label">NOW</span>
+          <span class="endpoint__dot"></span>
+          <strong>SSAFY</strong>
+        </div>
+
+        <button class="milestone" type="button" data-goal="btest" aria-label="첫 번째 목표 확인" aria-expanded="false" aria-controls="goal-detail">
+          <span class="milestone__step">STEP 01</span>
+          <span class="milestone__node"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M15 14h18v20H15zM19 10h10v8H19zM19 24l3 3 7-8"/></svg></span>
+          <span class="milestone__hint">CLICK</span>
+        </button>
+
+        <button class="milestone" type="button" data-goal="engineer" aria-label="두 번째 목표 확인" aria-expanded="false" aria-controls="goal-detail">
+          <span class="milestone__step">STEP 02</span>
+          <span class="milestone__node"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="22" r="11"/><path d="M18 32l-2 8 8-4 8 4-2-8M20 22l3 3 6-7"/></svg></span>
+          <span class="milestone__hint">CLICK</span>
+        </button>
+
+        <button class="milestone" type="button" data-goal="opic" aria-label="세 번째 목표 확인" aria-expanded="false" aria-controls="goal-detail">
+          <span class="milestone__step">STEP 03</span>
+          <span class="milestone__node"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 14h28v20H22l-8 6v-6h-4zM17 21h14M17 27h9"/></svg></span>
+          <span class="milestone__hint">CLICK</span>
+        </button>
+
+        <button class="milestone" type="button" data-goal="award" aria-label="네 번째 목표 확인" aria-expanded="false" aria-controls="goal-detail">
+          <span class="milestone__step">STEP 04</span>
+          <span class="milestone__node"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M16 10h16v9c0 7-3 12-8 15-5-3-8-8-8-15zM16 14h-6c0 8 3 11 8 12M32 14h6c0 8-3 11-8 12M20 38h8M24 34v4"/></svg></span>
+          <span class="milestone__hint">CLICK</span>
+        </button>
+
+        <button class="milestone" type="button" data-goal="career" aria-label="다섯 번째 목표 확인" aria-expanded="false" aria-controls="goal-detail">
+          <span class="milestone__step">STEP 05</span>
+          <span class="milestone__node milestone__node--finish"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 38V10h23l-5 7 5 7H12M12 30h14v8H12"/></svg></span>
+          <span class="milestone__hint">GOAL</span>
+        </button>
+
+        <div class="endpoint endpoint--finish" aria-hidden="true">
+          <span class="endpoint__label">FUTURE</span>
+          <span class="endpoint__dot"></span>
+          <strong>NEXT</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="goal-detail" id="goal-detail" aria-live="polite" aria-hidden="true">
+      <button class="goal-detail__close" type="button" aria-label="목표 상세 닫기">×</button>
+      <div class="goal-detail__number" aria-hidden="true">01</div>
+      <div class="goal-detail__body">
+        <p class="goal-detail__category">STEP 01 · SOFTWARE SKILL</p>
+        <h2>목표를 선택해 주세요.</h2>
+        <p class="goal-detail__description"></p>
+        <div class="goal-detail__plan">
+          <span>HOW TO</span>
+          <p></p>
+        </div>
+      </div>
+      <div class="goal-detail__status" aria-hidden="true">
+        <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="43"/><circle class="goal-detail__ring" cx="50" cy="50" r="43"/></svg>
+        <strong>01 / 05</strong>
+      </div>
+    </section>
+
+    <footer class="goals-footer">
+      <p>한 단계씩, 분명하게.</p>
+      <a href="career.html">다음 이야기 · 커리어 <span aria-hidden="true">→</span></a>
+    </footer>
   </main>
 </body>
 </html>
