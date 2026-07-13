@@ -3,13 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>커리어 | 나의 이야기</title>
+  <meta name="description" content="이동원의 기술 스택, 알고리즘 학습과 프로젝트 경험">
+  <title>커리어 | 이동원의 이야기</title>
   <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="career.css">
+  <script src="career.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar" aria-label="주요 메뉴">
-      <a class="navbar__brand" href="index.html">나의 이야기</a>
+      <a class="navbar__brand" href="index.html">이동원의 이야기</a>
       <input class="navbar__toggle" type="checkbox" id="nav-toggle" aria-label="메뉴 열기">
       <label class="navbar__hamburger" for="nav-toggle" aria-hidden="true"><span class="navbar__hamburger-lines"></span></label>
       <ul class="navbar__menu">
@@ -19,10 +22,115 @@
       </ul>
     </nav>
   </header>
-  <main class="page">
-    <p class="page__eyebrow">커리어</p>
-    <h1 class="page__title">문제를 풀고,<br>경험을 쌓아요.</h1>
-    <p class="page__description">알고리즘 학습과 프로젝트 경험, 앞으로의 커리어를 담는 페이지입니다.</p>
+
+  <main>
+    <section class="career-hero" aria-labelledby="career-title">
+      <div class="career-hero__copy reveal">
+        <p class="career-label">CAREER &amp; EXPERIENCE</p>
+        <h1 id="career-title">기술을 쌓고,<br><span>문제를 해결하며</span><br>성장합니다.</h1>
+        <p>백엔드 기술을 중심으로<br>사용자에게 실제로 필요한 서비스를 만들어왔어요.</p>
+      </div>
+      <div class="career-hero__orbit reveal reveal--delay" aria-hidden="true">
+        <div class="orbit-core"><span>BACKEND</span><strong>DEV</strong></div>
+        <span class="orbit-chip orbit-chip--java">JAVA</span>
+        <span class="orbit-chip orbit-chip--spring">SPRING</span>
+        <span class="orbit-chip orbit-chip--aws">AWS</span>
+        <span class="orbit-chip orbit-chip--db">DB</span>
+      </div>
+    </section>
+
+    <section class="stack-section" aria-labelledby="stack-title">
+      <header class="section-heading reveal">
+        <p class="career-label">01 · TECH STACK</p>
+        <h2 id="stack-title">서비스의 뒤편을<br>단단하게 만듭니다.</h2>
+        <p>언어와 프레임워크부터 데이터, 인프라까지<br>백엔드 개발의 전체 흐름을 경험했습니다.</p>
+      </header>
+
+      <div class="stack-board reveal">
+        <div class="stack-core" aria-hidden="true">
+          <span>MY STACK</span>
+          <strong>9</strong>
+          <small>TECHNOLOGIES</small>
+        </div>
+        <div class="stack-group stack-group--language">
+          <p>LANGUAGE</p>
+          <ul><li class="stack-pill">JAVA</li></ul>
+        </div>
+        <div class="stack-group stack-group--framework">
+          <p>FRAMEWORK</p>
+          <ul><li class="stack-pill">Spring Boot</li><li class="stack-pill">JPA</li></ul>
+        </div>
+        <div class="stack-group stack-group--data">
+          <p>DATA</p>
+          <ul><li class="stack-pill">MySQL</li><li class="stack-pill">PostgreSQL</li><li class="stack-pill">Redis</li></ul>
+        </div>
+        <div class="stack-group stack-group--infra">
+          <p>INFRA &amp; MESSAGE</p>
+          <ul><li class="stack-pill">AWS</li><li class="stack-pill">Docker</li><li class="stack-pill">RabbitMQ</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="algorithm-section" aria-labelledby="algorithm-title">
+      <div class="algorithm-copy reveal">
+        <p class="career-label">02 · ALGORITHM</p>
+        <h2 id="algorithm-title">Gold III,<br>그리고 다시 시작.</h2>
+        <p>2월에 백준 골드 3을 달성했지만, 이후 학습에 소홀해지며 실력이 많이 줄었다고 느끼고 있어요.</p>
+        <p class="algorithm-copy__resolve">지금의 위치를 솔직히 인정하고<br>문제 풀이 감각을 다시 쌓아가려 합니다.</p>
+      </div>
+
+      <div class="algorithm-chart reveal reveal--delay" aria-label="알고리즘 실력 변화와 재도전 계획을 나타낸 그래프">
+        <div class="chart-grid" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <svg viewBox="0 0 620 360" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="chart-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3182f6" stop-opacity=".28"/><stop offset="1" stop-color="#3182f6" stop-opacity="0"/></linearGradient></defs>
+          <path class="chart-area" d="M20 310 C90 270 130 155 205 105 C280 62 315 190 375 238 C440 285 505 260 600 164 L600 340 L20 340 Z"/>
+          <path class="chart-line" d="M20 310 C90 270 130 155 205 105 C280 62 315 190 375 238 C440 285 505 260 600 164"/>
+        </svg>
+        <div class="chart-point chart-point--peak"><span>FEBRUARY</span><strong>GOLD III</strong><small>달성</small></div>
+        <div class="chart-point chart-point--now"><span>NOW</span><strong>재정비</strong><small>현재 위치</small></div>
+        <div class="chart-point chart-point--next"><span>NEXT</span><strong>꾸준함</strong><small>다시 상승</small></div>
+      </div>
+    </section>
+
+    <section class="projects-section" aria-labelledby="projects-title">
+      <header class="section-heading section-heading--projects reveal">
+        <p class="career-label">03 · PROJECTS</p>
+        <h2 id="projects-title">네 번의 프로젝트,<br>네 가지 문제 해결.</h2>
+        <p>카드를 선택하면 각 프로젝트가 해결하려는 문제를 확인할 수 있어요.</p>
+      </header>
+
+      <div class="project-showcase reveal">
+        <div class="project-tabs" role="tablist" aria-label="프로젝트 선택">
+          <button class="project-tab is-active" type="button" role="tab" id="tab-istetrip" aria-selected="true" aria-controls="project-panel" data-project="istetrip"><span>01</span> Istetrip</button>
+          <button class="project-tab" type="button" role="tab" id="tab-modak" aria-selected="false" aria-controls="project-panel" data-project="modak"><span>02</span> 모닥모닥</button>
+          <button class="project-tab" type="button" role="tab" id="tab-weiver" aria-selected="false" aria-controls="project-panel" data-project="weiver"><span>03</span> WEIVER</button>
+          <button class="project-tab" type="button" role="tab" id="tab-probe" aria-selected="false" aria-controls="project-panel" data-project="probe"><span>04</span> Probe</button>
+        </div>
+
+        <article class="project-panel" id="project-panel" role="tabpanel" aria-labelledby="tab-istetrip" tabindex="0">
+          <div class="project-panel__visual project-panel__visual--island" aria-hidden="true">
+            <span class="visual-badge">TRAVEL</span>
+            <div class="island"><i></i><i></i><i></i></div>
+            <span class="visual-number">01</span>
+          </div>
+          <div class="project-panel__content">
+            <p class="project-panel__type">TRAVEL APPLICATION</p>
+            <h3>Istetrip</h3>
+            <p class="project-panel__summary">섬 여행을 더 쉽게 계획하고 즐길 수 있도록 도와주는 애플리케이션입니다.</p>
+            <div class="project-panel__problem"><span>PROBLEM</span><p>낯선 섬의 정보를 찾고 여행 동선을 계획하는 과정의 불편함을 줄입니다.</p></div>
+            <div class="project-panel__index"><strong>01</strong><span>/ 04</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="career-closing" aria-label="커리어 페이지 마무리">
+      <div class="reveal">
+        <p>BUILD · LEARN · REPEAT</p>
+        <h2>잘하는 것에 안주하지 않고,<br>부족한 것부터 다시 채웁니다.</h2>
+        <a href="index.html">처음으로 · 자기소개 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
   </main>
 </body>
 </html>
