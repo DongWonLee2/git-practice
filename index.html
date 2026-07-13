@@ -7,7 +7,10 @@
   <title>자기소개 | 이동원의 이야기</title>
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="introduction.css">
+  <link rel="stylesheet" href="theme.css">
+  <script src="site-controls.js"></script>
   <script src="introduction.js" defer></script>
+  <script src="guestbook.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -118,6 +121,21 @@
         <h2>천천히, 하지만 꾸준히.<br>저다운 속도로 나아갑니다.</h2>
         <a href="goals.html">다음 이야기 · SSAFY 목표 <span aria-hidden="true">→</span></a>
       </div>
+    </section>
+
+    <section class="guestbook" aria-labelledby="guestbook-title">
+      <div class="guestbook__heading reveal">
+        <p class="section-label">GUESTBOOK</p>
+        <h2 id="guestbook-title">방명록</h2>
+        <p>다녀간 흔적을 남겨주세요.</p>
+      </div>
+      <form class="guestbook-form reveal" autocomplete="off">
+        <input name="name" type="text" maxlength="20" required placeholder="이름" aria-label="이름">
+        <input name="message" type="text" maxlength="200" required placeholder="메시지" aria-label="메시지">
+        <button type="submit">남기기 <span aria-hidden="true">→</span></button>
+      </form>
+      <div class="guestbook__summary"><strong class="guestbook__count">0</strong> <span>개의 메시지</span></div>
+      <ul class="guestbook-list" aria-live="polite"></ul>
     </section>
   </main>
 </body>
