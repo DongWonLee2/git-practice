@@ -17,7 +17,7 @@
 :root[data-theme="dark"] .goals-page { background:radial-gradient(circle at 8% 25%,rgba(49,130,246,.12),transparent 25%),radial-gradient(circle at 92% 80%,rgba(120,81,255,.1),transparent 24%),#17191c; }
 :root[data-theme="dark"] .milestone__node, :root[data-theme="dark"] .endpoint__dot { background:#252a31; }
 :root[data-theme="dark"] .stack-board { background:#20242a; }
-:root[data-theme="dark"] .stack-pill, :root[data-theme="dark"] .stack-group { background:#2b3038; color:#f2f4f6; }
+:root[data-theme="dark"] .stack-group, :root[data-theme="dark"] .stack-tech { border-color:#333d4b; background:#2b3038; color:#f2f4f6; }
 :root[data-theme="dark"] .project-panel { background:#252a31; }
 :root[data-theme="dark"] .project-panel h3, :root[data-theme="dark"] .project-panel__summary, :root[data-theme="dark"] .project-panel__problem p { color:#f2f4f6; }
 :root[data-theme="dark"] .project-panel__problem { border-top-color:#4e5968; }
