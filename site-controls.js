@@ -124,6 +124,7 @@
       document.documentElement.dataset.theme = window.siteTheme;
       localStorage.setItem(THEME_KEY, window.siteTheme);
       updateControls();
+      window.dispatchEvent(new CustomEvent('site-theme-change', { detail: { theme: window.siteTheme } }));
     });
 
     document.querySelector('.language-toggle')?.addEventListener('click', () => {

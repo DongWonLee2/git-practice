@@ -66,6 +66,7 @@ guestbookForm?.addEventListener('submit', (event) => {
   saveEntries(entries.slice(-50));
   guestbookForm.reset();
   renderGuestbook();
+  window.dispatchEvent(new CustomEvent('guestbook-entry-created'));
 });
 
 window.addEventListener('site-language-change', renderGuestbook);
