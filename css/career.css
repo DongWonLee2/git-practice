@@ -1,7 +1,7 @@
 html { scroll-behavior: smooth; }
 body { overflow-x: hidden; }
 
-.career-label { margin: 0 0 17px; color: var(--toss-blue); font-size: 13px; font-weight: 800; letter-spacing: .13em; }
+.career-label { margin: 0 0 17px; color: var(--toss-blue); font-size: 16px; font-weight: 800; letter-spacing: .11em; }
 .career-hero, .stack-section, .algorithm-section, .projects-section { width: min(100% - 48px, 1120px); margin: 0 auto; }
 .career-hero { display: grid; min-height: calc(100svh - var(--nav-height)); padding: 80px 0; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 70px; }
 .career-hero h1, .section-heading h2, .algorithm-copy h2, .career-closing h2 { margin: 0; font-weight: 750; letter-spacing: -.06em; word-break: keep-all; }

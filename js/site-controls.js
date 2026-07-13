@@ -11,7 +11,7 @@
   document.documentElement.lang = window.siteLanguage;
 
   const koToEn = {
-    '이동원의 이야기': "Dongwon's Story", '자기소개': 'About Me', 'SSAFY 목표': 'SSAFY Goals', '커리어': 'Career',
+    '이동원의 이야기': "Dongwon's Story", '홈으로 이동': 'Go to home', '자기소개': 'About Me', 'SSAFY 목표': 'SSAFY Goals', '커리어': 'Career',
     '안녕하세요': 'HELLO', '좋아하는 일에는': 'For the things I love,', '마음부터 움직이는': 'I lead with my heart.', '이동원입니다.': "I'm Dongwon Lee.",
     '작은 호기심도 그냥 지나치지 않고,': 'I never let even a small curiosity pass by,', '천천히 제 것으로 만들어가고 있어요.': 'and slowly turn it into something of my own.',
     '상세 소개로 이동': 'Explore my story', '한여름에 태어난': 'Born in midsummer,', '사자자리예요.': "I'm a Leo.",

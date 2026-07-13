@@ -8,6 +8,8 @@
 :root[data-theme="dark"] body { background:#17191c; color:#f2f4f6; }
 :root[data-theme="dark"] .site-header { border-bottom-color:rgba(255,255,255,.08); background:rgba(23,25,28,.94); }
 :root[data-theme="dark"] .navbar__menu { background:#17191c; }
+:root[data-theme="dark"] .navbar__brand { background:#253a52; }
+:root[data-theme="dark"] .navbar__brand:hover { background:#294665; }
 :root[data-theme="dark"] .hero__portrait-bg { background:linear-gradient(150deg,#253a52,#1e2d41); }
 :root[data-theme="dark"] .hero__badge, :root[data-theme="dark"] .mbti-card { background:rgba(37,42,49,.9); color:#f2f4f6; }
 :root[data-theme="dark"] .story--mbti { background:#18241e; }

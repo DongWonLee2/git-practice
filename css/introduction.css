@@ -4,7 +4,7 @@ body { overflow-x: hidden; }
 .section-label {
   margin: 0 0 18px;
   color: var(--toss-blue);
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 800;
   letter-spacing: 0.08em;
 }
