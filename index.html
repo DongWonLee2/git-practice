@@ -3,26 +3,122 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>기본정보 | 나의 이야기</title>
+  <meta name="description" content="이동원의 취향과 일상을 담은 자기소개 페이지">
+  <title>자기소개 | 이동원의 이야기</title>
   <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="introduction.css">
+  <script src="introduction.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar" aria-label="주요 메뉴">
-      <a class="navbar__brand" href="index.html">나의 이야기</a>
+      <a class="navbar__brand" href="index.html">이동원의 이야기</a>
       <input class="navbar__toggle" type="checkbox" id="nav-toggle" aria-label="메뉴 열기">
       <label class="navbar__hamburger" for="nav-toggle" aria-hidden="true"><span class="navbar__hamburger-lines"></span></label>
       <ul class="navbar__menu">
-        <li><a class="navbar__link is-active" href="index.html" aria-current="page">기본정보</a></li>
+        <li><a class="navbar__link is-active" href="index.html" aria-current="page">자기소개</a></li>
         <li><a class="navbar__link" href="goals.html">SSAFY 목표</a></li>
         <li><a class="navbar__link" href="career.html">커리어</a></li>
       </ul>
     </nav>
   </header>
-  <main class="page">
-    <p class="page__eyebrow">기본정보</p>
-    <h1 class="page__title">안녕하세요,<br>저를 소개할게요.</h1>
-    <p class="page__description">사진과 이름, 생년월일, 거주지, MBTI, 취미를 담는 페이지입니다.</p>
+
+  <main>
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="hero__copy reveal">
+        <p class="section-label">안녕하세요</p>
+        <h1 id="intro-title">좋아하는 일에는<br><span>마음부터 움직이는</span><br>이동원입니다.</h1>
+        <p class="hero__description">작은 호기심도 그냥 지나치지 않고,<br>천천히 제 것으로 만들어가고 있어요.</p>
+      </div>
+      <div class="hero__portrait-wrap reveal reveal--delay" aria-hidden="true">
+        <div class="hero__portrait-bg"></div>
+        <img class="hero__portrait" src="이동원 사본.jpg" alt="">
+        <span class="hero__badge">LEE DONG WON</span>
+      </div>
+      <a class="scroll-cue" href="#birthday" aria-label="상세 소개로 이동">
+        <span>SCROLL</span><i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <section class="story story--birthday" id="birthday" aria-labelledby="birthday-title">
+      <div class="story__visual reveal" aria-hidden="true">
+        <span class="big-number">28</span>
+        <span class="orbit orbit--one"></span>
+        <span class="orbit orbit--two"></span>
+        <span class="leo">♌</span>
+      </div>
+      <div class="story__copy reveal reveal--delay">
+        <p class="section-label">2000.07.28</p>
+        <h2 id="birthday-title">한여름에 태어난<br>사자자리예요.</h2>
+        <p>스무 번째 여름의 한가운데에서 태어났어요. 뜨거운 계절처럼, 좋아하는 일 앞에서는 열정이 먼저 앞섭니다.</p>
+      </div>
+    </section>
+
+    <section class="story story--home" aria-labelledby="home-title">
+      <div class="story__copy reveal">
+        <p class="section-label">MY PLACES</p>
+        <h2 id="home-title">마음의 집은 인천,<br>오늘의 생활은 관악.</h2>
+        <p>본가는 인천에 있어요. 지금은 관악구에서 새로운 사람과 경험을 만나며 저만의 생활 반경을 넓히고 있습니다.</p>
+      </div>
+      <div class="route-card reveal reveal--delay" aria-label="인천에서 관악으로 이어지는 거주지">
+        <div><span class="route-card__dot"></span><strong>인천</strong><small>나의 본가</small></div>
+        <span class="route-card__line" aria-hidden="true"></span>
+        <div><span class="route-card__dot route-card__dot--active"></span><strong>관악구</strong><small>지금 사는 곳</small></div>
+      </div>
+    </section>
+
+    <section class="story story--mbti" aria-labelledby="mbti-title">
+      <div class="mbti-card reveal">
+        <img src="assets/infp-mediator.png" alt="INFP 열정적인 중재자를 표현한 초록색 인물 일러스트">
+      </div>
+      <div class="story__copy reveal reveal--delay">
+        <p class="section-label">INFP · MEDIATOR</p>
+        <h2 id="mbti-title">조용하지만 마음속은<br><span class="green">열정적인 중재자.</span></h2>
+        <p>사람과 의미를 오래 들여다보는 편이에요. 진심이 닿는 일을 발견하면 제 속도대로 깊이 몰입합니다.</p>
+        <div class="keyword-list" aria-label="성향 키워드">
+          <span>#공감</span><span>#호기심</span><span>#몰입</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="hobbies" aria-labelledby="hobby-title">
+      <div class="hobbies__heading reveal">
+        <p class="section-label">OFF THE CLOCK</p>
+        <h2 id="hobby-title">쉬는 시간도<br>좋아하는 것으로 꽉 채워요.</h2>
+      </div>
+      <div class="hobby-grid">
+        <article class="hobby-card hobby-card--sports reveal">
+          <span class="hobby-card__emoji" aria-hidden="true">⚽</span>
+          <p class="hobby-card__index">01</p>
+          <h3>스포츠 보기</h3>
+          <p>경기 시작 전 라인업부터 경기 후 하이라이트까지. 보는 시간도 제겐 꽤 진지한 취미예요.</p>
+          <span class="hobby-card__tmi">TMI · 응원할 때만큼은 누구보다 과몰입</span>
+        </article>
+        <article class="hobby-card hobby-card--running reveal reveal--delay">
+          <span class="hobby-card__emoji" aria-hidden="true">🏃</span>
+          <p class="hobby-card__index">02</p>
+          <h3>러닝</h3>
+          <p>복잡한 생각은 발끝에 두고 달려요. 한 걸음씩 쌓이는 기록에서 작은 성취를 느낍니다.</p>
+          <span class="hobby-card__tmi">TMI · 뛰고 나서 보는 기록이 제일 뿌듯함</span>
+        </article>
+        <article class="hobby-card hobby-card--game reveal reveal--delay-2">
+          <span class="hobby-card__emoji" aria-hidden="true">🎮</span>
+          <p class="hobby-card__index">03</p>
+          <h3>게임</h3>
+          <p>규칙을 이해하고 전략을 바꿔가며 해결하는 과정이 좋아요. 친구와 함께라면 재미는 두 배가 됩니다.</p>
+          <span class="hobby-card__tmi">TMI · “한 판만”이 가장 지키기 어려운 약속</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing" aria-label="자기소개 마무리">
+      <div class="closing__orb" aria-hidden="true"></div>
+      <div class="reveal">
+        <p>이동원 · 2000 · INFP</p>
+        <h2>천천히, 하지만 꾸준히.<br>저다운 속도로 나아갑니다.</h2>
+        <a href="goals.html">다음 이야기 · SSAFY 목표 <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
   </main>
 </body>
 </html>
