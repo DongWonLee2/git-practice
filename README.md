@@ -1,6 +1,6 @@
 # 이동원 포트폴리오
 
-SSAFY 생활과 개발자로서의 목표, 경험을 소개하는 개인 포트폴리오입니다.  
+SSAFY 생활과 개발자로서의 목표, 경험을 소개하는 간단한 개인 포트폴리오입니다.  
 토스 랜딩 페이지처럼 간결한 정보 구조와 스크롤 기반 인터랙션을 적용했으며, 별도의 프레임워크 없이 HTML, CSS, JavaScript로 제작했습니다.
 
 ## 페이지
@@ -61,52 +61,3 @@ self_description2/
 └─ docs/
    └─ sample.txt
 ```
-
-## 로컬에서 실행하기
-
-정적 웹사이트이므로 `index.html`을 직접 열어도 확인할 수 있습니다. 다만 브라우저 보안 정책에 따른 차이를 피하려면 로컬 서버 사용을 권장합니다.
-
-Python이 설치되어 있다면 프로젝트 루트에서 실행합니다.
-
-```bash
-python -m http.server 4173
-```
-
-이후 브라우저에서 아래 주소로 접속합니다.
-
-```text
-http://localhost:4173
-```
-
-## Netlify 배포
-
-별도의 빌드 과정이 없는 정적 프로젝트입니다.
-
-1. 이 저장소를 GitHub에 푸시합니다.
-2. Netlify에서 저장소를 연결합니다.
-3. Build command는 비워 둡니다.
-4. Publish directory에는 프로젝트 루트인 `.`을 입력합니다.
-5. 배포를 실행합니다.
-
-JavaScript와 `localStorage`는 Netlify 무료 정적 호스팅에서도 사용할 수 있습니다. 단, 방명록 데이터와 탐험 기록은 서버가 아닌 방문자의 브라우저에만 저장됩니다.
-
-## 기술 구성
-
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- Web Storage API
-- Intersection Observer API
-
-## 브라우저 데이터 초기화
-
-사이트에서 사용하는 주요 저장 키는 다음과 같습니다.
-
-| 용도 | 키 |
-| --- | --- |
-| 테마 | `dongwon-site-theme` |
-| 언어 | `dongwon-site-language` |
-| 방명록 | `dongwon-guestbook-entries` |
-| 탐험 패스 | `portfolio-explore-pass` |
-
-탐험 패스 기록은 패널의 `진행도 초기화` 버튼으로 삭제할 수 있습니다. 나머지 데이터는 브라우저 개발자 도구의 Local Storage에서 관리할 수 있습니다.
